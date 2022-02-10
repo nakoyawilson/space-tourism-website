@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <main className="main-home">
       <section className="content-home">
         <h1 className="home-heading">
-          So, you want to travel to <span className="space">Space</span>
+          So, you want to travel to<span className="space">Space</span>
         </h1>
         <p className="paragraph home-paragraph">
           Let’s face it; if you want to go to space, you might as well genuinely
@@ -13,9 +15,9 @@ const Home = () => {
         </p>
       </section>
       <div className="explore-wrapper">
-        <a href="#" className="explore">
+        <Link to="/destination" className="explore">
           Explore
-        </a>
+        </Link>
       </div>
     </main>
   );

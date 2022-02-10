@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -27,28 +28,52 @@ const Header = () => {
         </button>
         <ul className="nav-links">
           <li className="nav-item">
-            <a href="#" className="nav-link" onClick={closeMenu}>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `nav-link ${isActive ? "active-link" : ""}`
+              }
+              onClick={closeMenu}
+            >
               <span className="nav-index">00</span>
               <span>Home</span>
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link" onClick={closeMenu}>
+            <NavLink
+              to="/destination"
+              className={({ isActive }) =>
+                `nav-link ${isActive ? "active-link" : ""}`
+              }
+              onClick={closeMenu}
+            >
               <span className="nav-index">01</span>
               <span>Destination</span>
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link" onClick={closeMenu}>
+            <NavLink
+              to="/crew"
+              className={({ isActive }) =>
+                `nav-link ${isActive ? "active-link" : ""}`
+              }
+              onClick={closeMenu}
+            >
               <span className="nav-index">02</span>
               <span>Crew</span>
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link" onClick={closeMenu}>
+            <NavLink
+              to="/technology"
+              className={({ isActive }) =>
+                `nav-link ${isActive ? "active-link" : ""}`
+              }
+              onClick={closeMenu}
+            >
               <span className="nav-index">03</span>
               <span>Technology</span>
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>

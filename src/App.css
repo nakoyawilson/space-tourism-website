@@ -138,6 +138,7 @@ body {
   line-height: 1.9rem;
   text-align: center;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .space {
@@ -237,6 +238,9 @@ body {
     display: inline-block;
   }
 
+  .nav-link.active-link {
+    color: red;
+  }
   .nav-index {
     display: none;
   }
