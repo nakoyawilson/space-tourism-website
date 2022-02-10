@@ -777,10 +777,10 @@ input[type="radio"] {
 
   .main-technology .content-wrapper {
     flex-direction: row-reverse;
+    justify-content: space-between;
     margin-top: 2.6rem;
     margin-left: 16.5rem;
     margin: 2.6rem 0 10.1rem 16.5rem;
-    gap: 13rem;
   }
 
   .content-technology {
