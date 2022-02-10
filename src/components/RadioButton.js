@@ -2,13 +2,13 @@ const RadioButton = (props) => {
   return (
     <div className={props.radioButtonClasses}>
       <label className={props.labelClasses}>
+        {props.buttonValue}
         <input
           type="radio"
           name={props.groupName}
           id={props.buttonID}
           value={props.buttonValue}
         />
-        {props.buttonValue}
       </label>
     </div>
   );

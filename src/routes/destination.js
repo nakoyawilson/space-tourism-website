@@ -15,59 +15,67 @@ const Destination = () => {
         <span className="page-index">01</span>
         <span>Pick your destination</span>
       </h1>
-      <img
-        src={destinations[arrayIndex].image}
-        alt={destinations[arrayIndex].destination}
-        className="image-destination"
-      />
-      <form className="form-destination" onChange={handleChange}>
-        <RadioButton
-          radioButtonClasses="inline-radio-button"
-          groupName="destinations"
-          buttonID="0"
-          buttonValue="Moon"
-          labelClasses="label-destination"
-        />
-        <RadioButton
-          radioButtonClasses="inline-radio-button"
-          groupName="destinations"
-          buttonID="1"
-          buttonValue="Mars"
-          labelClasses="label-destination"
-        />
-        <RadioButton
-          radioButtonClasses="inline-radio-button"
-          groupName="destinations"
-          buttonID="2"
-          buttonValue="Titan"
-          labelClasses="label-destination"
-        />
-        <RadioButton
-          radioButtonClasses="inline-radio-button"
-          groupName="destinations"
-          buttonID="3"
-          buttonValue="Europa"
-          labelClasses="label-destination"
-        />
-      </form>
-      <h2 className="page-subheading">
-        {destinations[arrayIndex].destination}
-      </h2>
-      <p className="paragraph destination-paragraph">
-        {destinations[arrayIndex].description}
-      </p>
-      <section className="stats-container">
-        <div>
-          <h3 className="stats-heading">Avg. distance</h3>
-          <span className="stats-number">
-            {destinations[arrayIndex].distance}
-          </span>
+      <div className="content-wrapper">
+        <div className="image-wrapper">
+          <img
+            src={destinations[arrayIndex].image}
+            alt={destinations[arrayIndex].destination}
+            className="image-destination"
+          />
         </div>
-        <div>
-          <h3 className="stats-heading">Est. travel time</h3>
-          <span className="stats-number">{destinations[arrayIndex].time}</span>
+        <div className="content-destination">
+          <form className="form-destination" onChange={handleChange}>
+            <RadioButton
+              radioButtonClasses="inline-radio-button"
+              groupName="destinations"
+              buttonID="0"
+              buttonValue="Moon"
+              labelClasses="label-destination"
+            />
+            <RadioButton
+              radioButtonClasses="inline-radio-button"
+              groupName="destinations"
+              buttonID="1"
+              buttonValue="Mars"
+              labelClasses="label-destination"
+            />
+            <RadioButton
+              radioButtonClasses="inline-radio-button"
+              groupName="destinations"
+              buttonID="2"
+              buttonValue="Titan"
+              labelClasses="label-destination"
+            />
+            <RadioButton
+              radioButtonClasses="inline-radio-button"
+              groupName="destinations"
+              buttonID="3"
+              buttonValue="Europa"
+              labelClasses="label-destination"
+            />
+          </form>
+          <h2 className="page-subheading">
+            {destinations[arrayIndex].destination}
+          </h2>
+          <p className="paragraph destination-paragraph">
+            {destinations[arrayIndex].description}
+          </p>
+          <section className="stats-container">
+            <div>
+              <h3 className="stats-heading">Avg. distance</h3>
+              <span className="stats-number">
+                {destinations[arrayIndex].distance}
+              </span>
+            </div>
+            <div>
+              <h3 className="stats-heading">Est. travel time</h3>
+              <span className="stats-number">
+                {destinations[arrayIndex].time}
+              </span>
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
     </main>
   );
 };
