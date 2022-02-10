@@ -17,7 +17,7 @@ const Technology = () => {
       <div className="content-wrapper">
         <div className="image-wrapper">
           <img
-            src={technologies[technologyIndex].portraitImage}
+            src={technologies[technologyIndex].landscapeImage}
             alt={technologies[technologyIndex].technology}
             className="image-technology"
           />
