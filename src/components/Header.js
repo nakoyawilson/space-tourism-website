@@ -1,12 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
+  const [bodyClass, setBodyClass] = useState("home-page");
 
   const handleToggle = () => {
     setNavOpen((prev) => !prev);
   };
+
+  const setBackground = (backgroundClass) => {
+    setBodyClass(backgroundClass);
+  };
+
+  useEffect(() => {
+    document.querySelector("body").classList = bodyClass;
+  }, [bodyClass]);
 
   const closeMenu = () => {
     setNavOpen(false);
@@ -33,7 +42,10 @@ const Header = () => {
               className={({ isActive }) =>
                 `nav-link ${isActive ? "active-link" : ""}`
               }
-              onClick={closeMenu}
+              onClick={() => {
+                closeMenu();
+                setBackground("home-page");
+              }}
             >
               <span className="nav-index">00</span>
               <span>Home</span>
@@ -45,7 +57,10 @@ const Header = () => {
               className={({ isActive }) =>
                 `nav-link ${isActive ? "active-link" : ""}`
               }
-              onClick={closeMenu}
+              onClick={() => {
+                closeMenu();
+                setBackground("destinations-page");
+              }}
             >
               <span className="nav-index">01</span>
               <span>Destination</span>
@@ -57,7 +72,10 @@ const Header = () => {
               className={({ isActive }) =>
                 `nav-link ${isActive ? "active-link" : ""}`
               }
-              onClick={closeMenu}
+              onClick={() => {
+                closeMenu();
+                setBackground("crew-page");
+              }}
             >
               <span className="nav-index">02</span>
               <span>Crew</span>
@@ -69,7 +87,10 @@ const Header = () => {
               className={({ isActive }) =>
                 `nav-link ${isActive ? "active-link" : ""}`
               }
-              onClick={closeMenu}
+              onClick={() => {
+                closeMenu();
+                setBackground("technology-page");
+              }}
             >
               <span className="nav-index">03</span>
               <span>Technology</span>
