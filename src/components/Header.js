@@ -7,6 +7,10 @@ const Header = () => {
     setNavOpen((prev) => !prev);
   };
 
+  const closeMenu = () => {
+    setNavOpen(false);
+  };
+
   return (
     <header className="header">
       <img
@@ -23,25 +27,25 @@ const Header = () => {
         </button>
         <ul className="nav-links">
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            <a href="#" className="nav-link" onClick={closeMenu}>
               <span className="nav-index">00</span>
               <span>Home</span>
             </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            <a href="#" className="nav-link" onClick={closeMenu}>
               <span className="nav-index">01</span>
-              <span> Destination</span>
+              <span>Destination</span>
             </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            <a href="#" className="nav-link" onClick={closeMenu}>
               <span className="nav-index">02</span>
               <span>Crew</span>
             </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            <a href="#" className="nav-link" onClick={closeMenu}>
               <span className="nav-index">03</span>
               <span>Technology</span>
             </a>

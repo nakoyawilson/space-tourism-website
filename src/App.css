@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap");
 
 :root {
-  --font-primary: "Barlow Condensed", sans-serif;
-  --font-secondary: "Bellefair", serif;
+  --font-1: "Barlow", sans-serif;
+  --font-2: "Barlow Condensed", sans-serif;
+  --font-3: "Bellefair", serif;
   --dark-color: rgb(11, 13, 23);
   --light-color: rgb(208, 214, 249);
   --white: rgb(255, 255, 255);
@@ -17,6 +18,8 @@
   box-sizing: border-box;
 }
 
+/* General Styles */
+
 html {
   font-size: 62.5%;
 }
@@ -24,14 +27,24 @@ html {
 body {
   background-image: url("../public/assets/home/background-home-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  font-family: var(--font-primary);
+  background-size: 100% 100%;
+  font-family: var(--font-1);
   font-weight: 400;
   color: var(--light-color);
   min-height: 100vh;
 }
 
-/* Header Section */
+#root {
+  width: min(100%, 1440px);
+  margin-inline: auto;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+/* Header */
 
 .header {
   padding: 2.4rem;
@@ -95,6 +108,7 @@ body {
 }
 
 .nav-link {
+  font-family: var(--font-2);
   color: var(--white);
   text-decoration: none;
   font-size: 1.6rem;
@@ -113,8 +127,12 @@ body {
 
 /* Home Page */
 
-.home-heading {
+.main-home {
   margin-top: 2.4rem;
+}
+
+.home-heading {
+  font-family: var(--font-2);
   font-size: 1.6rem;
   letter-spacing: 2.7px;
   line-height: 1.9rem;
@@ -124,20 +142,18 @@ body {
 
 .space {
   color: var(--white);
-  display: inline-block;
-  font-family: var(--font-secondary);
+  display: block;
+  font-family: var(--font-3);
   font-size: 8rem;
   line-height: 10rem;
   font-weight: 400;
   margin-top: 1.6rem;
 }
 
-.paragraph {
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+.home-paragraph {
   text-align: center;
-  margin-top: 1.6rem;
-  padding: 0 6rem;
+  margin: 1.6rem auto 0;
+  width: min(87.2%, 32.7rem);
 }
 
 .explore-wrapper {
@@ -153,11 +169,205 @@ body {
 
 .explore {
   color: var(--dark-color);
-  font-family: var(--font-secondary);
+  font-family: var(--font-3);
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.3rem;
   letter-spacing: 1.25px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  /* General Styles */
+  body {
+    background-image: url("../public/assets/home/background-home-tablet.jpg");
+  }
+
+  .paragraph {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+
+  /* Header */
+
+  .header {
+    padding: 0 0 0 2.4rem;
+  }
+
+  .logo {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+
+  .navigation {
+    position: static;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    transform: none;
+    padding: 3.9rem 4.6rem 3.9rem 4.8rem;
+  }
+
+  .nav-links {
+    list-style: none;
+    margin-left: 3.2rem;
+    display: flex;
+  }
+
+  .nav-item {
+    margin-bottom: 0;
+    margin-left: 3.7rem;
+  }
+
+  .nav-item:nth-of-type(1) {
+    margin-left: 0;
+  }
+
+  .nav-item:nth-of-type(3) {
+    margin-left: 4.2rem;
+  }
+
+  .nav-link {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    letter-spacing: 2.3625px;
+    display: inline-block;
+  }
+
+  .nav-index {
+    display: none;
+  }
+
+  .navigation-button,
+  .navigation .navigation-button {
+    display: none;
+  }
+
+  /* Home Page */
+
+  .main-home {
+    margin-top: 10.6rem;
+  }
+
+  .home-heading {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 3.375px;
+  }
+
+  .space {
+    font-size: 15rem;
+    line-height: 15rem;
+    margin-top: 2.4rem;
+  }
+
+  .home-paragraph {
+    margin-top: 2.4rem;
+    width: 44.4rem;
+  }
+
+  .explore-wrapper {
+    width: 24.2rem;
+    height: 24.2rem;
+    margin: 15.6rem auto 9rem;
+  }
+
+  .explore {
+    font-size: 3.2rem;
+    line-height: 3.7rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* General Styles */
+
+  body {
+    background-image: url("../public/assets/home/background-home-desktop.jpg");
+  }
+
+  .paragraph {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+  }
+
+  /* Header */
+
+  .header {
+    margin-top: 4rem;
+    padding-left: 5.5rem;
+  }
+
+  .navigation {
+    padding: 3.9rem 16.5rem 3.8rem 12.3rem;
+  }
+
+  .nav-index {
+    display: inline-block;
+    margin-right: 1.2rem;
+  }
+
+  .nav-index:nth-of-type(1) {
+    margin-right: 1.1rem;
+  }
+
+  .nav-index:nth-of-type(2) {
+    margin-right: 1.4rem;
+  }
+
+  .nav-link {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: 2.7px;
+  }
+
+  .nav-item {
+    margin-left: 4.8rem;
+  }
+
+  .nav-item:nth-of-type(1) {
+    margin-left: 0;
+  }
+
+  /* Home Page */
+
+  .main-home {
+    display: flex;
+    margin: 25.1rem 16.5rem 0;
+    position: relative;
+  }
+
+  .main-home::before {
+    content: "";
+    position: absolute;
+    top: -29.8rem;
+    width: 47.3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .home-heading {
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    letter-spacing: 4.725px;
+    text-align: left;
+  }
+
+  .space {
+    line-height: 17.2rem;
+    margin-inline: 0;
+  }
+
+  .home-paragraph {
+    text-align: left;
+    margin-inline: 0;
+  }
+
+  .explore-wrapper {
+    width: 27.4rem;
+    height: 27.4rem;
+    margin: 10.8rem 0 13.1rem auto;
+  }
 }
