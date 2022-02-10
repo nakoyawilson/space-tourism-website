@@ -1,4 +1,12 @@
+import { useState } from "react";
+
 const Header = () => {
+  const [navOpen, setNavOpen] = useState(false);
+
+  const handleToggle = () => {
+    setNavOpen((prev) => !prev);
+  };
+
   return (
     <header className="header">
       <img
@@ -6,11 +14,11 @@ const Header = () => {
         alt="Space tourism website logo"
         className="logo"
       />
-      <button className="navigation-button">
+      <button className="navigation-button" onClick={handleToggle}>
         <img src="assets/shared/icon-hamburger.svg" alt="" />
       </button>
-      <nav className="navigation">
-        <button className="navigation-button">
+      <nav className={`navigation  ${navOpen ? "open" : ""}`}>
+        <button className="navigation-button" onClick={handleToggle}>
           <img src="assets/shared/icon-close.svg" alt="" />
         </button>
         <ul className="nav-links">

@@ -52,11 +52,18 @@ body {
 }
 
 .navigation {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 69vw;
   height: 100vh;
+  transform: translateX(100%);
+  transition: 500ms ease-in-out;
+}
+
+.navigation.open {
+  transform: translateX(0);
+  transition: 500ms ease-in-out;
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
