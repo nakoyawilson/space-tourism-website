@@ -7,6 +7,7 @@
   --dark-color: rgb(11, 13, 23);
   --light-color: rgb(208, 214, 249);
   --white: rgb(255, 255, 255);
+  --paragraph-border: #383b4b;
 }
 
 /* CSS Reset */
@@ -42,6 +43,10 @@ body {
 .paragraph {
   font-size: 1.5rem;
   line-height: 2.5rem;
+}
+
+input[type="radio"] {
+  opacity: 0;
 }
 
 /* Header */
@@ -128,7 +133,7 @@ body {
 /* Home Page */
 
 .main-home {
-  margin-top: 2.4rem;
+  margin-top: 4.8rem;
 }
 
 .home-heading {
@@ -177,6 +182,105 @@ body {
   letter-spacing: 1.25px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+/* Destination */
+
+.main-destination {
+  margin-top: 2.4rem;
+}
+
+.page-heading {
+  font-size: 1.6rem;
+  font-family: var(--font-2);
+  font-weight: 400;
+  line-height: 1.9rem;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  display: flex;
+  gap: 1.8rem;
+  justify-content: center;
+}
+
+.page-index {
+  font-weight: 700;
+  opacity: 0.25;
+}
+
+.image-destination {
+  display: block;
+  width: 17rem;
+  height: 17rem;
+  margin: 3.2rem auto 2.6rem;
+}
+
+.form-destination {
+  display: flex;
+  justify-content: center;
+}
+
+.label-destination {
+  font-family: var(--font-2);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.4rem;
+}
+
+.page-subheading {
+  color: var(--white);
+  font-family: var(--font-3);
+  font-weight: 400;
+  font-size: 5.6rem;
+  line-height: 6.4rem;
+  margin-top: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.destination-paragraph {
+  text-align: center;
+  margin: 0.1rem 2.4rem 3.2rem;
+  padding-bottom: 3.2rem;
+  border-bottom: 1px solid var(--paragraph-border);
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  margin-bottom: 5.8rem;
+}
+
+.stats-heading,
+.stats-number {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.stats-heading {
+  font-family: var(--font-2);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 2.3625px;
+}
+
+.stats-number {
+  display: block;
+  color: var(--white);
+  font-family: var(--font-3);
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  margin-top: 1.2rem;
 }
 
 /* Media Queries */
