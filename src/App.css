@@ -812,4 +812,10 @@ input[type="radio"] {
     text-align: left;
     margin-left: 0;
   }
+
+  .image-technology {
+    width: 51.5rem;
+    height: 52.7rem;
+    margin: 0;
+  }
 }
