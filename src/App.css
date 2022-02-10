@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap");
 
 :root {
   --font-primary: "Barlow Condensed", sans-serif;
@@ -6,6 +6,15 @@
   --dark-color: rgb(11, 13, 23);
   --light-color: rgb(208, 214, 249);
   --white: rgb(255, 255, 255);
+}
+
+/* CSS Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -19,6 +28,7 @@ body {
   font-family: var(--font-primary);
   font-weight: 400;
   color: var(--light-color);
+  min-height: 100vh;
 }
 
 /* Header Section */
@@ -28,6 +38,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -39,6 +50,61 @@ body {
   background-color: transparent;
   border: none;
 }
+
+.navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 69vw;
+  height: 100vh;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .navigation {
+    background: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(81.5485px);
+    backdrop-filter: blur(81.5485px);
+  }
+}
+
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .navigation {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.navigation .navigation-button {
+  display: flex;
+  margin: 3.3rem 2.4rem 6.4rem auto;
+}
+
+.nav-links {
+  list-style: none;
+  margin-left: 3.2rem;
+}
+
+.nav-item {
+  margin-bottom: 3.2rem;
+}
+
+.nav-link {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 1.8rem auto;
+  column-gap: 1.1rem;
+  justify-content: start;
+}
+
+.nav-index {
+  font-weight: 700;
+}
+
+/* Home Page */
 
 .home-heading {
   margin-top: 2.4rem;
@@ -64,7 +130,7 @@ body {
   line-height: 2.5rem;
   text-align: center;
   margin-top: 1.6rem;
-  padding: 0 5rem;
+  padding: 0 6rem;
 }
 
 .explore-wrapper {
