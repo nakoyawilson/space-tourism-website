@@ -581,6 +581,36 @@ input[type="radio"] {
     align-items: space-around;
     gap: auto;
   }
+
+  /* Technology */
+
+  .form-technology {
+    margin-bottom: 6rem;
+  }
+
+  .label-techology {
+    width: 6rem;
+    height: 6rem;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    text-align: center;
+  }
+
+  .technology-heading {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: 2.7px;
+  }
+
+  .technology-heading .page-subheading {
+    margin: 1.6rem auto 1.6rem;
+    font-size: 4rem;
+    line-height: 4.6rem;
+  }
+
+  .technology-paragraph {
+    width: 45.8rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -737,5 +767,49 @@ input[type="radio"] {
   .stats-heading,
   .stats-number {
     text-align: left;
+  }
+
+  /* Technology */
+
+  .main-technology {
+    margin-top: 7.6rem;
+  }
+
+  .main-technology .content-wrapper {
+    flex-direction: row-reverse;
+    margin-top: 2.6rem;
+    margin-left: 16.5rem;
+    margin: 2.6rem 0 10.1rem 16.5rem;
+    gap: 13rem;
+  }
+
+  .content-technology {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8rem;
+    margin-top: 11.1rem;
+  }
+
+  .form-technology {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 3.2rem;
+    margin-bottom: 0;
+  }
+
+  .technology-heading {
+    text-align: left;
+  }
+
+  .technology-heading .page-subheading {
+    margin: 1.1rem auto 1.7rem 0;
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+  }
+
+  .technology-paragraph {
+    width: 44.4rem;
+    text-align: left;
+    margin-left: 0;
   }
 }

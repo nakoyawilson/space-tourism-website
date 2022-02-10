@@ -1,5 +1,6 @@
 import { useState } from "react";
 import RadioButton from "../components/RadioButton";
+import Picture from "../components/Picture";
 import technologies from "../data/data-technology";
 
 const Technology = () => {
@@ -16,47 +17,49 @@ const Technology = () => {
       </h1>
       <div className="content-wrapper">
         <div className="image-wrapper">
-          <img
-            src={technologies[technologyIndex].landscapeImage}
-            alt={technologies[technologyIndex].technology}
-            className="image-technology"
+          <Picture
+            imageClass="image-technology"
+            altText={technologies[technologyIndex].technology}
+            landscapePicture={technologies[technologyIndex].landscapeImage}
           />
         </div>
         <div className="content-technology">
           <form className="form-technology" onChange={handleTechnologyChange}>
             <RadioButton
-              radioButtonClasses="inline-circle-radio-button"
+              radioButtonClasses="circle-radio-button"
               groupName="technologies"
               buttonID="0"
               buttonValue="1"
               labelClasses="label-techology"
             />
             <RadioButton
-              radioButtonClasses="inline-circle-radio-button"
+              radioButtonClasses="circle-radio-button"
               groupName="technologies"
               buttonID="1"
               buttonValue="2"
               labelClasses="label-techology"
             />
             <RadioButton
-              radioButtonClasses="inline-circle-radio-button"
+              radioButtonClasses="circle-radio-button"
               groupName="technologies"
               buttonID="2"
               buttonValue="3"
               labelClasses="label-techology"
             />
           </form>
+          <div>
+            <h2 className="technology-heading">
+              The terminology...
+              <span className="page-subheading">
+                {technologies[technologyIndex].technology}
+              </span>
+            </h2>
+            <p className="paragraph technology-paragraph">
+              {technologies[technologyIndex].description}
+            </p>
+          </div>
         </div>
       </div>
-      <h2 className="technology-heading">
-        The terminology...
-        <span className="page-subheading">
-          {technologies[technologyIndex].technology}
-        </span>
-      </h2>
-      <p className="paragraph technology-paragraph">
-        {technologies[technologyIndex].description}
-      </p>
     </main>
   );
 };
