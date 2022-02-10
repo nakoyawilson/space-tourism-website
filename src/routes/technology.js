@@ -21,6 +21,7 @@ const Technology = () => {
             imageClass="image-technology"
             altText={technologies[technologyIndex].technology}
             landscapePicture={technologies[technologyIndex].landscapeImage}
+            portraitPicture={technologies[technologyIndex].portraitImage}
           />
         </div>
         <div className="content-technology">
