@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/space-tourism-website/static/css/main.173331c6.css",
-    "main.js": "/space-tourism-website/static/js/main.a93bfada.js",
+    "main.css": "/space-tourism-website/static/css/main.700491a9.css",
+    "main.js": "/space-tourism-website/static/js/main.1b2363d2.js",
     "static/media/background-home-mobile.jpg": "/space-tourism-website/static/media/background-home-mobile.13f7adecbcb3c3f170d8.jpg",
     "index.html": "/space-tourism-website/index.html",
-    "main.173331c6.css.map": "/space-tourism-website/static/css/main.173331c6.css.map",
-    "main.a93bfada.js.map": "/space-tourism-website/static/js/main.a93bfada.js.map"
+    "main.700491a9.css.map": "/space-tourism-website/static/css/main.700491a9.css.map",
+    "main.1b2363d2.js.map": "/space-tourism-website/static/js/main.1b2363d2.js.map"
   },
   "entrypoints": [
-    "static/css/main.173331c6.css",
-    "static/js/main.a93bfada.js"
+    "static/css/main.700491a9.css",
+    "static/js/main.1b2363d2.js"
   ]
 }
