@@ -361,6 +361,60 @@ input[type="radio"] {
   margin-top: 1.2rem;
 }
 
+/* Technology */
+
+.image-technology {
+  width: 100%;
+  margin: 6rem 0 5.6rem;
+}
+
+.form-technology {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 2.6rem;
+}
+
+.label-techology {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-family: var(--font-3);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  text-align: center;
+}
+
+.technology-heading {
+  font-family: var(--font-2);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 2.3625px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.technology-heading .page-subheading {
+  display: block;
+  margin: 0.9rem auto 1.6rem;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+}
+
+.technology-paragraph {
+  margin: 0 auto 8.1rem;
+  width: min(87.2%, 32.7rem);
+  text-align: center;
+}
+
 /* Media Queries */
 @media screen and (min-width: 768px) {
   /* General Styles */

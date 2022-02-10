@@ -4,10 +4,10 @@ import destinations from "../data/data-destinations";
 import "../App.css";
 
 const Destination = () => {
-  const [arrayIndex, setArrayIndex] = useState(0);
+  const [destinationIndex, setDestinationIndex] = useState(0);
 
-  const handleChange = (e) => {
-    setArrayIndex(e.target.id);
+  const handleDestinationChange = (e) => {
+    setDestinationIndex(e.target.id);
   };
   return (
     <main className="main-destination">
@@ -18,13 +18,13 @@ const Destination = () => {
       <div className="content-wrapper">
         <div className="image-wrapper">
           <img
-            src={destinations[arrayIndex].image}
-            alt={destinations[arrayIndex].destination}
+            src={destinations[destinationIndex].image}
+            alt={destinations[destinationIndex].destination}
             className="image-destination"
           />
         </div>
         <div className="content-destination">
-          <form className="form-destination" onChange={handleChange}>
+          <form className="form-destination" onChange={handleDestinationChange}>
             <RadioButton
               radioButtonClasses="inline-radio-button"
               groupName="destinations"
@@ -55,22 +55,22 @@ const Destination = () => {
             />
           </form>
           <h2 className="page-subheading">
-            {destinations[arrayIndex].destination}
+            {destinations[destinationIndex].destination}
           </h2>
           <p className="paragraph destination-paragraph">
-            {destinations[arrayIndex].description}
+            {destinations[destinationIndex].description}
           </p>
           <section className="stats-container">
             <div>
               <h3 className="stats-heading">Avg. distance</h3>
               <span className="stats-number">
-                {destinations[arrayIndex].distance}
+                {destinations[destinationIndex].distance}
               </span>
             </div>
             <div>
               <h3 className="stats-heading">Est. travel time</h3>
               <span className="stats-number">
-                {destinations[arrayIndex].time}
+                {destinations[destinationIndex].time}
               </span>
             </div>
           </section>
