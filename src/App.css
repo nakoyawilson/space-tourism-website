@@ -103,6 +103,9 @@ input[type="radio"] {
 }
 
 .navigation {
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(81.5485px);
+  backdrop-filter: blur(81.5485px);
   position: fixed;
   top: 0;
   right: 0;
@@ -115,20 +118,6 @@ input[type="radio"] {
 .navigation.open {
   transform: translateX(0);
   transition: 500ms ease-in-out;
-}
-
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  .navigation {
-    background: rgba(255, 255, 255, 0.04);
-    -webkit-backdrop-filter: blur(81.5485px);
-    backdrop-filter: blur(81.5485px);
-  }
-}
-
-@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  .navigation {
-    background-color: rgba(255, 255, 255, 0.5);
-  }
 }
 
 .navigation .navigation-button {
@@ -267,22 +256,15 @@ input[type="radio"] {
   position: relative;
 }
 
+:checked + .label-destination {
+  border-bottom: 3px solid var(--white);
+}
+
 .label-destination:hover {
   cursor: pointer;
 }
 
-.label-destination::after {
-  content: "";
-  position: absolute;
-  bottom: -0.8rem;
-  left: 0;
-  right: 0;
-}
-
-.label-destination:hover::after {
-  content: "";
-  position: absolute;
-  bottom: -0.8rem;
+.label-destination:hover:not(:checked + .label-destination) {
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -386,6 +368,10 @@ input[type="radio"] {
   background-color: rgba(255, 255, 255, 0.17);
 }
 
+:checked + .label-crew {
+  background-color: var(--white);
+}
+
 .crew-title {
   font-family: var(--font-3);
   font-weight: 400;
@@ -436,7 +422,8 @@ input[type="radio"] {
   margin-bottom: 2.6rem;
 }
 
-.label-techology {
+.label-technology {
+  color: var(--white);
   width: 4rem;
   height: 4rem;
   display: flex;
@@ -449,6 +436,12 @@ input[type="radio"] {
   font-size: 1.6rem;
   line-height: 1.8rem;
   text-align: center;
+}
+
+:checked + .label-technology {
+  background-color: var(--white);
+  border: 1px solid var(--white);
+  color: var(--dark-color);
 }
 
 .technology-heading {
@@ -686,6 +679,14 @@ input[type="radio"] {
     margin-bottom: 4rem;
   }
 
+  .label-crew:hover {
+    cursor: pointer;
+  }
+
+  .label-crew:hover:not(:checked + .label-crew) {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
   /* Technology */
   .main-technology {
     margin-top: 4rem;
@@ -695,12 +696,20 @@ input[type="radio"] {
     margin-bottom: 6rem;
   }
 
-  .label-techology {
+  .label-technology {
     width: 6rem;
     height: 6rem;
     font-size: 2.4rem;
     line-height: 2.8rem;
     text-align: center;
+  }
+
+  .label-technology:hover {
+    cursor: pointer;
+  }
+
+  .label-technology:hover:not(:checked + .label-technology) {
+    border: 1px solid var(--white);
   }
 
   .technology-heading {
@@ -876,8 +885,6 @@ input[type="radio"] {
   .stats-number {
     text-align: left;
   }
-
-  /* Crew */
 
   /* Crew */
   .main-crew {
