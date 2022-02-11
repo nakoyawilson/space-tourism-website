@@ -25,7 +25,7 @@ const crewData = [
     rank: "Flight Engineer",
     fullName: "Anousheh Ansari",
     bio: `Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. `,
-    photo: "./assets/crew/image-danousheh-ansari.png",
+    photo: "./assets/crew/image-anousheh-ansari.png",
   },
 ];
 
