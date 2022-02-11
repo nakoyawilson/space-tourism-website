@@ -733,7 +733,6 @@ input[type="radio"] {
 
   body {
     background-image: var(--bg-desktop);
-    height: 100vh;
   }
 
   .paragraph {
