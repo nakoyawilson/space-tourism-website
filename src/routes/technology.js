@@ -34,6 +34,7 @@ const Technology = () => {
               buttonValue="1"
               buttonLabel="1"
               labelClasses="label-technology"
+              isChecked={true}
             />
             <RadioButton
               radioButtonClasses="circle-radio-button"
@@ -42,6 +43,7 @@ const Technology = () => {
               buttonValue="2"
               buttonLabel="2"
               labelClasses="label-technology"
+              isChecked={false}
             />
             <RadioButton
               radioButtonClasses="circle-radio-button"
@@ -50,6 +52,7 @@ const Technology = () => {
               buttonValue="3"
               buttonLabel="3"
               labelClasses="label-technology"
+              isChecked={false}
             />
           </form>
           <div>

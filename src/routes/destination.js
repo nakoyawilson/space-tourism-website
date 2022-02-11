@@ -32,6 +32,7 @@ const Destination = () => {
               buttonValue="Moon"
               buttonLabel="Moon"
               labelClasses="label-destination"
+              isChecked={true}
             />
             <RadioButton
               radioButtonClasses="inline-radio-button"
@@ -40,6 +41,7 @@ const Destination = () => {
               buttonValue="Mars"
               buttonLabel="Mars"
               labelClasses="label-destination"
+              isChecked={false}
             />
             <RadioButton
               radioButtonClasses="inline-radio-button"
@@ -48,6 +50,7 @@ const Destination = () => {
               buttonValue="Titan"
               buttonLabel="Titan"
               labelClasses="label-destination"
+              isChecked={false}
             />
             <RadioButton
               radioButtonClasses="inline-radio-button"
@@ -56,6 +59,7 @@ const Destination = () => {
               buttonValue="Europa"
               buttonLabel="Europa"
               labelClasses="label-destination"
+              isChecked={false}
             />
           </form>
           <h2 className="page-subheading">

@@ -6,6 +6,7 @@ const RadioButton = (props) => {
         name={props.groupName}
         id={props.buttonID}
         value={props.buttonValue}
+        defaultChecked={props.isChecked}
       />
       <label className={props.labelClasses} htmlFor={props.buttonID}>
         {props.buttonLabel}

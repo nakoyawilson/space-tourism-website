@@ -32,6 +32,7 @@ const Crew = () => {
               buttonValue={crewData[0].fullName}
               buttonLabel=""
               labelClasses="label-crew"
+              isChecked={true}
             />
             <RadioButton
               radioButtonClasses="circle-radio-button"
@@ -40,6 +41,7 @@ const Crew = () => {
               buttonValue={crewData[1].fullName}
               buttonLabel=""
               labelClasses="label-crew"
+              isChecked={false}
             />
             <RadioButton
               radioButtonClasses="circle-radio-button"
@@ -48,6 +50,7 @@ const Crew = () => {
               buttonValue={crewData[2].fullName}
               buttonLabel=""
               labelClasses="label-crew"
+              isChecked={false}
             />
             <RadioButton
               radioButtonClasses="circle-radio-button"
@@ -56,6 +59,7 @@ const Crew = () => {
               buttonValue={crewData[3].fullName}
               buttonLabel=""
               labelClasses="label-crew"
+              isChecked={false}
             />
           </form>
           <div>
