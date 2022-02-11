@@ -58,7 +58,6 @@ body {
   font-family: var(--font-1);
   font-weight: 400;
   color: var(--light-color);
-  min-height: 100vh;
 }
 
 #root {
@@ -734,6 +733,7 @@ input[type="radio"] {
 
   body {
     background-image: var(--bg-desktop);
+    height: 100vh;
   }
 
   .paragraph {
@@ -924,7 +924,7 @@ input[type="radio"] {
   }
 
   .form-crew {
-    margin: auto auto 9.4rem;
+    margin: auto auto 9.4rem 0;
     gap: 2.4rem;
   }
 
