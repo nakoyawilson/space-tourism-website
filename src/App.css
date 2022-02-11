@@ -207,6 +207,7 @@ input[type="radio"] {
 }
 
 .explore {
+  display: block;
   color: var(--dark-color);
   font-family: var(--font-3);
   font-weight: 400;
@@ -266,18 +267,6 @@ input[type="radio"] {
   position: relative;
 }
 
-#button:before {
-  background-color: blue;
-  content: "";
-  display: block;
-  height: 25px;
-  width: 25px;
-}
-
-#button:hover:before {
-  background-color: red;
-}
-
 .label-destination:hover {
   cursor: pointer;
 }
@@ -294,7 +283,7 @@ input[type="radio"] {
   content: "";
   position: absolute;
   bottom: -0.8rem;
-  border-bottom: 3px solid var(--white);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }
 
 .inline-radio-button {
@@ -516,7 +505,7 @@ input[type="radio"] {
     width: auto;
     height: auto;
     transform: none;
-    padding: 3.9rem 4.6rem 3.9rem 4.8rem;
+    padding: 3.9rem 4.6rem 0 4.8rem;
   }
 
   .nav-links {
@@ -542,12 +531,18 @@ input[type="radio"] {
     font-size: 1.4rem;
     line-height: 1.7rem;
     letter-spacing: 2.3625px;
+    padding-bottom: 3.9rem;
     display: inline-block;
   }
 
-  .nav-link.active-link {
-    color: red;
+  .nav-link.active-nav-link {
+    border-bottom: 3px solid var(--white);
   }
+
+  .nav-link:hover:not(.active-nav-link) {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  }
+
   .nav-index {
     display: none;
   }
@@ -590,6 +585,10 @@ input[type="radio"] {
     font-size: 3.2rem;
     line-height: 3.7rem;
     letter-spacing: 2px;
+  }
+
+  .explore-wrapper:hover {
+    box-shadow: 0 0 0 8rem rgba(255, 255, 255, 0.1);
   }
 
   /* Destination */
@@ -751,7 +750,7 @@ input[type="radio"] {
   }
 
   .navigation {
-    padding: 3.9rem 16.5rem 3.8rem 12.3rem;
+    padding: 3.9rem 16.5rem 0 12.3rem;
   }
 
   .nav-index {
@@ -771,6 +770,7 @@ input[type="radio"] {
     font-size: 1.6rem;
     line-height: 1.9rem;
     letter-spacing: 2.7px;
+    padding-bottom: 3.8rem;
   }
 
   .nav-item {
@@ -968,5 +968,7 @@ input[type="radio"] {
     width: 51.5rem;
     height: 52.7rem;
     margin: 0;
+    position: relative;
+    right: -2rem;
   }
 }

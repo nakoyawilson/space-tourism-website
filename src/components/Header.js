@@ -40,7 +40,7 @@ const Header = () => {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `nav-link ${isActive ? "active-link" : ""}`
+                `nav-link ${isActive ? "active-nav-link" : ""}`
               }
               onClick={() => {
                 closeMenu();
@@ -55,7 +55,7 @@ const Header = () => {
             <NavLink
               to="/destination"
               className={({ isActive }) =>
-                `nav-link ${isActive ? "active-link" : ""}`
+                `nav-link ${isActive ? "active-nav-link" : ""}`
               }
               onClick={() => {
                 closeMenu();
@@ -70,7 +70,7 @@ const Header = () => {
             <NavLink
               to="/crew"
               className={({ isActive }) =>
-                `nav-link ${isActive ? "active-link" : ""}`
+                `nav-link ${isActive ? "active-nav-link" : ""}`
               }
               onClick={() => {
                 closeMenu();
@@ -85,7 +85,7 @@ const Header = () => {
             <NavLink
               to="/technology"
               className={({ isActive }) =>
-                `nav-link ${isActive ? "active-link" : ""}`
+                `nav-link ${isActive ? "active-nav-link" : ""}`
               }
               onClick={() => {
                 closeMenu();
