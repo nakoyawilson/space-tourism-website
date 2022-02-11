@@ -2,7 +2,7 @@ const RadioButton = (props) => {
   return (
     <div className={props.radioButtonClasses}>
       <label className={props.labelClasses}>
-        {props.buttonValue}
+        {props.buttonLabel}
         <input
           type="radio"
           name={props.groupName}

@@ -31,6 +31,7 @@ const Technology = () => {
               groupName="technologies"
               buttonID="0"
               buttonValue="1"
+              buttonLabel="1"
               labelClasses="label-techology"
             />
             <RadioButton
@@ -38,6 +39,7 @@ const Technology = () => {
               groupName="technologies"
               buttonID="1"
               buttonValue="2"
+              buttonLabel="2"
               labelClasses="label-techology"
             />
             <RadioButton
@@ -45,6 +47,7 @@ const Technology = () => {
               groupName="technologies"
               buttonID="2"
               buttonValue="3"
+              buttonLabel="3"
               labelClasses="label-techology"
             />
           </form>

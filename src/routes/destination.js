@@ -30,6 +30,7 @@ const Destination = () => {
               groupName="destinations"
               buttonID="0"
               buttonValue="Moon"
+              buttonLabel="Moon"
               labelClasses="label-destination"
             />
             <RadioButton
@@ -37,6 +38,7 @@ const Destination = () => {
               groupName="destinations"
               buttonID="1"
               buttonValue="Mars"
+              buttonLabel="Mars"
               labelClasses="label-destination"
             />
             <RadioButton
@@ -44,6 +46,7 @@ const Destination = () => {
               groupName="destinations"
               buttonID="2"
               buttonValue="Titan"
+              buttonLabel="Titan"
               labelClasses="label-destination"
             />
             <RadioButton
@@ -51,6 +54,7 @@ const Destination = () => {
               groupName="destinations"
               buttonID="3"
               buttonValue="Europa"
+              buttonLabel="Europa"
               labelClasses="label-destination"
             />
           </form>
