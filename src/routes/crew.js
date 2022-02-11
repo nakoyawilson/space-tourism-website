@@ -15,7 +15,7 @@ const Crew = () => {
         <span className="page-index">02</span>
         <span>Meet your crew</span>
       </h1>
-      <div>
+      <div className="crew-content">
         <div className="image-wrapper">
           <img
             src={crewData[crewIndex].photo}
@@ -23,7 +23,7 @@ const Crew = () => {
             className="image-crew"
           />
         </div>
-        <div>
+        <div class="crew-text">
           <form className="form-crew" onChange={handleCrewChange}>
             <RadioButton
               radioButtonClasses="circle-radio-button"
@@ -60,7 +60,7 @@ const Crew = () => {
           </form>
           <div>
             <h2 className="crew-title">
-              {crewData[crewIndex].rank}
+              <span className="crew-rank">{crewData[crewIndex].rank}</span>
               <span className="crew-name">{crewData[crewIndex].fullName}</span>
             </h2>
             <p className="paragraph crew-paragraph">

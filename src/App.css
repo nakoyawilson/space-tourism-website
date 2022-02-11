@@ -363,9 +363,14 @@ input[type="radio"] {
 
 /* Crew */
 
+.main-crew {
+  margin-top: 2.4rem;
+}
+
 .main-crew .image-wrapper {
   margin: 3.2rem auto;
   height: 22.3rem;
+  width: min(87.2%, 32.7rem);
   border-bottom: 1px solid var(--content-border);
 }
 
@@ -400,15 +405,17 @@ input[type="radio"] {
   text-align: center;
   text-transform: uppercase;
   color: var(--white);
-  opacity: 0.5;
 }
 
 .crew-name {
   display: block;
-  opacity: 1;
   margin: 0.8rem auto 1.6rem;
   font-size: 2.4rem;
   line-height: 2.8rem;
+}
+
+.crew-rank {
+  opacity: 0.5;
 }
 
 .crew-paragraph {
@@ -418,6 +425,9 @@ input[type="radio"] {
 }
 
 /* Technology */
+.main-technology {
+  margin-top: 2.4rem;
+}
 
 .main-technology .image-wrapper {
   width: 100%;
@@ -643,7 +653,44 @@ input[type="radio"] {
     gap: auto;
   }
 
+  /* Crew */
+  .main-crew {
+    margin-top: 4rem;
+  }
+
+  .crew-content,
+  .crew-text {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .main-crew .image-wrapper {
+    margin: 4rem auto 0;
+    height: 53.2rem;
+    width: auto;
+    border: none;
+  }
+
+  .crew-title {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    margin-top: 6rem;
+  }
+
+  .crew-name {
+    font-size: 4rem;
+    line-height: 4.6rem;
+  }
+
+  .crew-paragraph {
+    width: 53.6rem;
+    margin-bottom: 4rem;
+  }
+
   /* Technology */
+  .main-technology {
+    margin-top: 4rem;
+  }
 
   .form-technology {
     margin-bottom: 6rem;
@@ -828,6 +875,49 @@ input[type="radio"] {
   .stats-heading,
   .stats-number {
     text-align: left;
+  }
+
+  /* Crew */
+
+  /* Crew */
+  .main-crew {
+    margin-top: 7.6rem;
+  }
+
+  .crew-content {
+    flex-direction: row-reverse;
+    margin-bottom: 0;
+    margin-left: 16.5rem;
+  }
+
+  .main-crew .image-wrapper {
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+  }
+
+  .crew-title {
+    text-align: left;
+    font-size: 3.2rem;
+    line-height: 3.7rem;
+    margin-top: 15.4rem;
+  }
+
+  .crew-name {
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+    margin: 1.5rem 0 2.7rem;
+  }
+
+  .crew-paragraph {
+    width: 44.4rem;
+    margin-bottom: 0;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .form-crew {
+    margin: auto auto 9.4rem;
   }
 
   /* Technology */
