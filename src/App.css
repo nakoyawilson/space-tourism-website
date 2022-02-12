@@ -759,7 +759,8 @@ input[type="radio"] {
   }
 
   .navigation {
-    padding: 3.9rem 16.5rem 0 12.3rem;
+    width: 83rem;
+    padding-left: 12.3rem;
   }
 
   .nav-index {
