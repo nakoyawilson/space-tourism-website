@@ -10,13 +10,8 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -34,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/space-tourism-multipage-website-using-react-j5dta0HUm](https://www.frontendmentor.io/solutions/space-tourism-multipage-website-using-react-j5dta0HUm)
 - Live Site URL: [https://nakoyawilson.github.io/space-tourism-website/](https://nakoyawilson.github.io/space-tourism-website/)
 
 ## My process
@@ -47,16 +42,10 @@ Users should be able to:
 - [React](https://reactjs.org/)
 - [React Router](https://reactrouter.com/)
 
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
 ### Useful resources
 
 - [How to implement Hamburger Menu in React](https://ibaslogic.com/how-to-add-hamburger-menu-in-react/)
-- [How to Deploy a Routed React App to GitHub Pages](https://www.freecodecamp.org/news/deploy-a-react-app-to-github-pages/) - This was helpful for understanding why BrowserRouter did not work with Github Pages and why using HashRouter instead was necessary.
+- [How to Deploy a Routed React App to GitHub Pages](https://www.freecodecamp.org/news/deploy-a-react-app-to-github-pages/) - This was helpful for understanding why I needed to use HashRouter instead of BrowserRouter.
 
 ## Author
 
