@@ -46,6 +46,7 @@ Users should be able to:
 
 - [How to implement Hamburger Menu in React](https://ibaslogic.com/how-to-add-hamburger-menu-in-react/)
 - [How to Deploy a Routed React App to GitHub Pages](https://www.freecodecamp.org/news/deploy-a-react-app-to-github-pages/) - This was helpful for understanding why I needed to use HashRouter instead of BrowserRouter.
+- [firefox backdrop-filter workaround](https://gist.github.com/mrtcmn/0490fb79fa63418e4409a99553f80e26)
 
 ## Author
 
