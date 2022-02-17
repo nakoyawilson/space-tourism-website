@@ -506,7 +506,7 @@ input[type="radio"] {
 
   .nav-links {
     list-style: none;
-    margin-left: 3.2rem;
+    margin-left: 4.8rem;
     display: flex;
   }
 
@@ -764,7 +764,11 @@ input[type="radio"] {
   .navigation {
     width: 83rem;
     height: 9.6rem;
-    padding-left: 12.3rem;
+    /* padding-left: 12.3rem; */
+  }
+
+  .nav-links {
+    margin-left: 12.3rem;
   }
 
   .nav-index {

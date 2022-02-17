@@ -31,7 +31,7 @@ const Header = () => {
       <button className="navigation-button" onClick={handleToggle}>
         <img src="assets/shared/icon-hamburger.svg" alt="" />
       </button>
-      <nav className={`navigation  ${navOpen ? "open" : ""}`}>
+      <nav className={`navigation ${navOpen ? "open" : ""}`}>
         <button className="navigation-button" onClick={handleToggle}>
           <img src="assets/shared/icon-close.svg" alt="" />
         </button>
