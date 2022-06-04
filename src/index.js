@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import Home from "./routes/home";
@@ -17,7 +17,7 @@ ReactDOM.render(
           <Route path="destination" element={<Destination />} />
           <Route path="crew" element={<Crew />} />
           <Route path="technology" element={<Technology />} />
-          <Route path="*" element={<p>There's nothing here!</p>} />
+          <Route path="*" element={<Navigate to="/" replace={true} />} />
         </Route>
       </Routes>
     </HashRouter>
